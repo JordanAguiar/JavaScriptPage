@@ -27,10 +27,11 @@ a{
 }
 
 section#carne{
-    background-image: url(img/Carne.jpg);
-    min-height: 600px;
+    background-image: url(img/Carne.png);
+    min-height: 950px;
     background-attachment:fixed;
     background-size: cover;
+    background-position: right;
     
 }
 .banner{
@@ -56,8 +57,8 @@ section#carne{
 }
 
 #restaurante{
-    background-image: url(img/restaurante.jpg);
-    min-height: 600px;
+    background-image: url(img/restaurante.png);
+    min-height: 900px;
     background-attachment: fixed;
     background-size: cover;
     color: #AFA060;
@@ -73,10 +74,22 @@ section#carne{
     display: flex;
     list-style-type: none;
     font-weight: bolder;
+    justify-content: space-around;
 }
 
 div.txtrest{
     display: flex;
+    justify-content: space-around;
     
+}
 
+.txtrest p{
+    width: 25%;
+    
+}
+
+#reserva{
+    background-image: url(img/reserva.png);
+    background-attachment: fixed;
+    min-height: 900px;
 }
