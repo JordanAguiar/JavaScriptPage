@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Oxanium', cursive;
+}
 header{
     background-color: #AFA060;
+    
 }
 ul{
     display: flex;
@@ -19,13 +25,58 @@ a{
     text-decoration: none;
     color: #323232;
 }
+
 section#carne{
     background-image: url(img/Carne.jpg);
+    min-height: 600px;
+    background-attachment:fixed;
     background-size: cover;
-    padding: 230px;
+    
+}
+.banner{
+    text-align: center;
+    color: white;    
+    margin-top: 15%;
+    font-size: 40px;
+}
+.banner input{
+    background-color: #AFA060;
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
 }
 
-.banner{
-    color: white;
+#endereco{
+    color: #AFA060;
+    background-color: #323232;
+    text-align: center;
+}
+
+#restaurante{
+    background-image: url(img/restaurante.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #AFA060;
+}
+#restaurante h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+#restaurante ul{
+    display: flex;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+div.txtrest{
+    display: flex;
     
+
 }
