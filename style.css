@@ -9,87 +9,118 @@ body{
 }
 header{
     background-color: #AFA060;
-    
+    padding: 15px;
 }
-ul{
+nav ul{
     display: flex;
-    list-style-type: none;
-    justify-content: center;   
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: center;
+    list-style: none;
+        
+
 }
-ul li{
-    margin-right: 20px;
-}
-a{
+nav ul li a{
+    padding: 10px;
     text-decoration: none;
     color: #323232;
 }
 
-section#carne{
-    background-image: url(img/Carne.png);
-    min-height: 950px;
-    background-attachment:fixed;
-    background-size: cover;
-    background-position: right;
+#endereco{
+    text-align: center;    
+    background-color: #323232;
+    color: #AFA060;
+
+}
+
+#carne{
+    background-image: url('img/Carne.png');
+    text-align: center;
+    height: 97vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     
 }
 .banner{
-    text-align: center;
-    color: white;    
-    margin-top: 15%;
-    font-size: 40px;
+    margin-top: 30vh;
+    font-size: 3vh;
+    color: white;
 }
+
 .banner input{
     background-color: #AFA060;
-    padding: 20px;
     color: white;
-    font-weight: bolder;
-    border-radius: 5px;
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.24);
-    cursor: pointer;
-}
-
-#endereco{
-    color: #AFA060;
-    background-color: #323232;
-    text-align: center;
-}
-
-#restaurante{
-    background-image: url(img/restaurante.png);
-    min-height: 900px;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #AFA060;
-}
-#restaurante h1{
-    text-align: center;
+    padding: 10px 20px 10px 20px;
     font-weight: bold;
-    font-size: 40px;
-    padding-top: 60px;
 }
 
-#restaurante ul{
+section.restaurante{
+    background-image: url(img/restaurante.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 97vh;
+    padding: 40px;
+    color: #cab866;
+    text-align: center;
+}
+
+.txtrest1 ul{
     display: flex;
-    list-style-type: none;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10vh;
     font-weight: bolder;
-    justify-content: space-around;
+}
+.txtrest1 h1{
+    font-size: 5vh;
+    margin-top: 10vh;
 }
 
-div.txtrest{
+.txtrest2 ul{
     display: flex;
     justify-content: space-around;
-    
-}
-
-.txtrest p{
-    width: 25%;
-    
+    list-style: none;
+    margin-top: 5vh;
 }
 
 #reserva{
     background-image: url(img/reserva.png);
+    height: 97vh;
     background-attachment: fixed;
-    min-height: 900px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 80px;
+}
+
+.res1{
+    margin-top: 20vh;
+    color: white;
+    font-size: 3vh;
+}
+
+.txtcuriosidade{
+    background-image: url(img/curiosidade.png);
+    height: 97vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 80px;
+}
+
+.drink{
+    background-image: url(img/drink.png);
+    height: 97vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 80px;
+}
+footer{
+    background-color: #323232;
+    color: #AFA060;
+    text-align: center;
+    padding: 20px;
 }
