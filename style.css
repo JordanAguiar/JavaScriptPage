@@ -10,13 +10,20 @@ body{
 header{
     background-color: #AFA060;
     padding: 15px;
+    position: fixed;
+    width: 100%;
 }
 nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
-        
-
+    
+}
+nav li:hover{
+    background-color: white;
+}
+nav li{
+    transition: background-color 0.2s;
 }
 nav ul li a{
     padding: 10px;
@@ -24,20 +31,23 @@ nav ul li a{
     color: #323232;
 }
 
-#endereco{
+
+.endereco{
     text-align: center;    
     background-color: #323232;
     color: #AFA060;
-
+    
+   
 }
 
-#carne{
+.carne{
     background-image: url('img/Carne.png');
     text-align: center;
-    height: 97vh;
+    height: 98vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
+    padding-top: 50px;
     
 }
 .banner{
@@ -58,7 +68,7 @@ section.restaurante{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 97vh;
+    height: 98vh;
     padding: 40px;
     color: #cab866;
     text-align: center;
@@ -81,10 +91,12 @@ section.restaurante{
     justify-content: space-around;
     list-style: none;
     margin-top: 5vh;
+    font-size: 80%;
+    margin-bottom: -90px;
 }
-#reserva{
+.reserva{
     background-image: url(img/reserva.png);
-    height: 97vh;
+    height: 98vh;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -102,9 +114,9 @@ section.restaurante{
     padding: 10px 20px 10px 20px;
     font-weight: bold;
 }
-#txtcuriosidade{
+.txtcuriosidade{
     background-image: url(img/curiosidade.png);
-    height: 97vh;
+    height: 98vh;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -123,9 +135,9 @@ section.restaurante{
     margin: auto;
     font-size: 2vh;
 }
-#drink{
+.drink{
     background-image: url(img/drink.png);
-    height: 97vh;
+    height: 98vh;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -135,7 +147,7 @@ section.restaurante{
 .drink1 h1{
     color: white;
     font-size: 5vh;
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 .drink1 p{
     color: white;
@@ -149,4 +161,22 @@ footer{
     color: #AFA060;
     text-align: center;
     padding: 20px;
+    
+}
+
+.mapa > iframe{
+    width: 45vh;
+    height: 30vh;
+    border: none;
+    margin-top: 3vh;
+}
+footer a{
+    text-decoration: none;
+    color: #AFA060;
+    font-weight: bold;
+}
+
+#topo p{
+    font-size: 6vh;
+    margin-bottom: -3vh;
 }
