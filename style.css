@@ -1,182 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&display=swap');
-
-*{
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-body{
-    font-family: 'Oxanium', cursive;
-}
-header{
-    background-color: #AFA060;
+
+/* Estilizando o cabeçalho */
+header {
+    background: #AFA060;
+    color: white;
     padding: 15px;
     position: fixed;
     width: 100%;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    top: 0;
+    left: 0;
+    text-align: center;
     
 }
-nav li:hover{
-    background-color: white;
+
+nav ul {
+    list-style: none;
 }
-nav li{
-    transition: background-color 0.2s;
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
-nav ul li a{
-    padding: 10px;
-    text-decoration: none;
+
+nav ul li a {
     color: #323232;
-}
-
-
-.endereco{
-    text-align: center;    
-    background-color: #323232;
-    color: #AFA060;
-    
-   
-}
-
-.carne{
-    background-image: url('img/Carne.png');
-    text-align: center;
-    height: 98vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding-top: 50px;
-    
-}
-.banner{
-    margin-top: 30vh;
-    font-size: 3vh;
-    color: white;
-}
-
-.banner input{
-    background-color: #AFA060;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    font-weight: bold;
-}
-
-section.restaurante{
-    background-image: url(img/restaurante.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 98vh;
-    padding: 40px;
-    color: #cab866;
-    text-align: center;
-}
-
-.txtrest1 ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-top: 10vh;
-    font-weight: bolder;
-}
-.txtrest1 h1{
-    font-size: 5vh;
-    margin-top: 10vh;
-}
-
-.txtrest2 ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-top: 5vh;
-    font-size: 80%;
-    margin-bottom: -90px;
-}
-.reserva{
-    background-image: url(img/reserva.png);
-    height: 98vh;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 80px;
-}
-.res1{
-    margin-top: 20vh;
-    color: white;
-    font-size: 3vh;
-}
-.botao{
-    background-color: white;
-    color: black;
-    padding: 10px 20px 10px 20px;
-    font-weight: bold;
-}
-.txtcuriosidade{
-    background-image: url(img/curiosidade.png);
-    height: 98vh;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 90px;
-    
-}
-.curiosidade1 h1{
-    margin-top: 10vh;
-    color: #AFA060;
-    font-size: 5vh;
-}
-.curiosidade1 p{
-    color: #AFA060;
-    max-width: 70%;
-    margin: auto;
-    font-size: 2vh;
-}
-.drink{
-    background-image: url(img/drink.png);
-    height: 98vh;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 80px;
-}
-.drink1 h1{
-    color: white;
-    font-size: 5vh;
-    margin-top: 7vh;
-}
-.drink1 p{
-    color: white;
-    max-width: 70%;
-    margin: auto;
-    font-size: 2vh;
-    margin-top: 1vh;
-}
-footer{
-    background-color: #323232;
-    color: #AFA060;
-    text-align: center;
-    padding: 20px;
-    
-}
-
-.mapa > iframe{
-    width: 45vh;
-    height: 30vh;
-    border: none;
-    margin-top: 3vh;
-}
-footer a{
     text-decoration: none;
-    color: #AFA060;
-    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    color: #ffffff;
 }
 
-#topo p{
-    font-size: 6vh;
-    margin-bottom: -3vh;
+/* Seções */
+section {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+#home div{
+    padding: 6px 0px 6px 0px;
+    margin-top: 50px;
+    background-color: #323232;
+    font-size: 12px;
+    color: #AFA060;
+
+}
+#home h1{
+    font-size: 50px;
+    margin-top: 300px;
+}
+section ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    top: 20vh;
+}
+#about ul li{
+    font-size: 20px;
+    
+}
+#about ul li p{
+    margin-top: 10px;
+    font-size: 15px;
+    
+    
+}
+
+#home {
+    background: url('img/Carne.png') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+#about { 
+    background: url('img/curiosidade.png') no-repeat center center/cover; 
+    background-attachment: fixed;
+}
+#menu { background: #FFA500; }
+#reserva {
+    background: url('img/drink.png') no-repeat center center/cover;
+ }
+
+/* Rodapé */
+footer{
+    background: #323232;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+div iframe{
+    width: 50vh;
+    margin: 20px 0px 20px 0px;
 }
